@@ -6,13 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body>
-    
-    <div style="display: flex; justify-content: space-between;">
-    <p>TIEMPO: x</p>
-    <p>Nombre del usuario: Nacho</p>
-    <p>Nivel de dificultad: x</p>
-    <p>DINERO: x</p>
+<body class="bg-black text-white">
+    <div class="d-flex justify-content-between align-items-center p-3 mb-4 border-bottom border-secondary">
+    <p class="text-success mb-4">TIEMPO: x</p>
+    <p class="text-info mb-4">Nombre del usuario: x</p>
+    <p class="text-success mb-4">Nivel de dificultad: x</p>
+    <p class="text-info mb-4">DINERO: x</p>
 </div>
 
 <div style="text-align: center;">
@@ -20,33 +19,45 @@
 </div>
 
 <div style="text-align: center;">
-    <p>PREGUNTA</p>
+    <h1 class="text-success mb-4">PREGUNTA</h1>
 </div>
 
-<form>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
-        <label>
-            <input type="radio" name="opcion" id="opcionA">
-            OPCION A
+<form>      
+    <div class="row justify-content-center g-4 px-3">
+        
+    <div class="col-md-5">
+    <div class="card h-100 bg-transparent border-success p-3">
+     <div class="card-body form-check m-0">
+        <label class="form-check-label fw-bold text-success fs-5 mb-2">
+            <input type="radio" name="opcion" id="opcionA" class="form-check-input me-2">
+             <p>Opcion A: </p>             
+             Pregunta
         </label>
-        <p>+ x tiempo</p>
-        <p>+ x dinero</p>
+            <p class="text-success m-0 ps-4">+ x tiempo</p>
+            <p class="text-info m-0 ps-4">+ x dinero</p>
     </div>
-
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
-        <label>
-            <input type="radio" name="opcion" id="opcionB">
-            OPCION B
-        </label>
-        <p>+ x tiempo</p>
-        <p>+ x dinero</p>
     </div>
-    <div style="text-align: center;">
-    <a href="NADA"><button type="button" id="btn" class="btn btn-outline-success btn-lg mt-3">Continuar</button></a>
     </div>
-    <script src=></script>
-    
-</form>
+     <div class="col-md-5">
+        <div class="card h-100 bg-transparent border-success p-3">
+        <div class="card-body form-check m-0">
+           <label class="form-check-label fw-bold text-success fs-5 mb-2">
+             <input type="radio" name="opcion" id="opcionB" class="form-check-input me-2">
+                <p>Opcion B</p>
+                Pregunta
+            </label>
+            <p class="text-success m-0 ps-4">+ x tiempo</p>
+            <p class="text-info m-0 ps-4">+ x dinero</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="text-center">
+        <button value="pantalla4.html" type="button" id="btn" class="btn btn-outline-success btn-lg mt-5 px-5">Continuar</button>
+    </div>
+</form>     
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/ppi2026/js/practicas.js       "></script>
+</body>
 </body>
 </html>
