@@ -10,5 +10,6 @@ const Timer=setInterval(()=>{
     seg= "0" + seg
 if(seg==0){
     clearInterval(Timer)
+    seleccionarAleatoriamente();
 }
 },1000)
