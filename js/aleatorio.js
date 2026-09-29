@@ -1,9 +1,9 @@
 const reloj=document.getElementById("reloj")
-    const opa=document.getElementByID(opcionA);
-    const opb=document.getElementByID(opcionB);
+    const opa=document.getElementById(opcionA);
+    const opb=document.getElementById(opcionB);
 
-function seleccionaraleatoriamente {
-    num=Math.floor(Math.random()*2)+1
+function seleccionaraleatoriamente(){
+   let num=Math.floor(Math.random()*2)+1
     switch (num){
         case (1):
             opa.click()
