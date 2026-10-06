@@ -2,7 +2,7 @@ const reloj=document.getElementById("reloj")
     const opa=document.getElementById(opcionA);
     const opb=document.getElementById(opcionB);
 
-function seleccionaraleatoriamente(){
+export function seleccionarAletoriamente(){
    let num=Math.floor(Math.random()*2)+1
     switch (num){
         case (1):
