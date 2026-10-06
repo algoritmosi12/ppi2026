@@ -1,15 +1,17 @@
-let seg = 30
+import {seleccionarAleatoriamente} from "./aleatorio.js"
 
-export function reloj() {
-    const Timer = setInterval(() => {
-        seg--
-        reloj.textContent = seg
+const reloj=document.getElementById("reloj")
+let seg=30
 
-        if (seg < 10)
-            seg = "0" + seg
-        if (seg == 0) {
-            clearInterval(Timer)
-        }
-    }, 1000)
-    return seg;
+
+const Timer=setInterval(()=>{
+    seg--
+ reloj.textContent=seg
+   
+   if(seg<10)
+    seg= "0" + seg
+if(seg==0){
+    clearInterval(Timer)
+    
+seleccionarAleatoriamente();
 }
