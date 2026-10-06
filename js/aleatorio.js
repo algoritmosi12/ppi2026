@@ -1,4 +1,4 @@
-const reloj=document.getElementById("reloj")
+const reloj=document.getElementById("reloj");
     const opa=document.getElementById(opcionA);
     const opb=document.getElementById(opcionB);
 

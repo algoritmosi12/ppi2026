@@ -1,6 +1,6 @@
 import {seleccionarAleatoriamente} from "./aleatorio.js"
 
-const reloj=document.getElementById("reloj")
+const reloj=document.getElementById("reloj");
 let seg=30
 
 

@@ -1,4 +1,4 @@
-const user="usuario"
+const user="usuario";
 export function crearDatos(datos){
  if(recuperarDatos(user)==null){
     sessionStorage.setItem(user,JSON.stringify(datos));

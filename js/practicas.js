@@ -1,5 +1,6 @@
+import {dir} from "./rutas.js"  
 import { crearDatos } from "./sessionStorage.js";
-const nombre = document.getElementById("nombre")
+const nombre = document.getElementById("nombre");
 const diffNormal = document.getElementById("diffNormal");
 const Intro = document.getElementById("Intro");
 const diffDicil = document.getElementById("diffDificil");
@@ -10,14 +11,16 @@ boton.addEventListener("click", () => {
  let datos={}
  if(diffNormal.checked==true){
     datos.dinero=1000000;
-    datos.tiempo=2;
+    datos.tiempo= 104 ;
+    datos.diff="Normal"
  }else{
     datos.dinero=700000;
-    datos.tiempo=1;
+    datos.tiempo= 52 ;
+    datos.diff="Dificil"
  }
 datos.nombre=nombre.value;
 crearDatos(datos)
-    window.location.href =boton.value;
+    dir(boton.value)
 });
 
 diffDicil.addEventListener("change", () => {
