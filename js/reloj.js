@@ -15,4 +15,3 @@ if(seg==0){
     
 seleccionarAleatoriamente();
 }
-},1000)
