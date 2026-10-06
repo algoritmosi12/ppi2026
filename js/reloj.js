@@ -3,7 +3,7 @@ let seg=30
 
 
 const Timer=setInterval(()=>{
-    seg--
+    seg-- 
  reloj.textContent=seg
    
    if(seg<10)
