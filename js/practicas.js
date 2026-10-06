@@ -1,3 +1,5 @@
+import { crearDatos } from "./sessionStorage.js";
+const nombre = document.getElementById("nombre")
 const diffNormal = document.getElementById("diffNormal");
 const Intro = document.getElementById("Intro");
 const diffDicil = document.getElementById("diffDificil");
@@ -5,9 +7,19 @@ console.log(diffDicil)
 const boton = document.getElementById("btn");
  //sconsole.log(boton.value)
 boton.addEventListener("click", () => {
-    console.log(boton.value)
+ let datos={}
+ if(diffNormal.checked==true){
+    datos.dinero=1000000;
+    datos.tiempo=2;
+ }else{
+    datos.dinero=700000;
+    datos.tiempo=1;
+ }
+datos.nombre=nombre.value;
+crearDatos(datos)
     window.location.href =boton.value;
 });
+
 diffDicil.addEventListener("change", () => {
   Intro.textContent="";
     if (diffDicil.checked) {
