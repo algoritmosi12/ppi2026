@@ -13,9 +13,7 @@ const btn = document.getElementById("btn")
 
 tiempo.textContent = reloj()
 
-<<<<<<< HEAD
 
-const btn=document.getElementById("btn");
 const diff=document.getElementById("diff");
 const dinero=document.getElementById("dinero");
 const tiempo=document.getElementById("tiempo");
@@ -33,21 +31,3 @@ btn.addEventListener("click", () => {
 })
 
 
-=======
-btn.addEventListener("click", () => {
-    if (reloj === 0) {
-        switch (seleccionarAletoriamente()) {
-            case (1):
-                opcionA.checked = true;
-                break;
-            case (2):
-                opcionB.checked = true;
-                break;
-            case (3):
-                opcionC.checked = true;
-                break;
-        }
-    }
-        dir(btn.value);
-    })
->>>>>>> 054463615137a26d7aa5183232b83e7468cdd939
