@@ -1,9 +1,9 @@
 let seg = 30
 
-export function reloj() {
+export function reloj(tiempo) {
     const Timer = setInterval(() => {
         seg--
-        reloj.textContent = seg
+        tiempo.textContent = seg
 
         if (seg < 10)
             seg = "0" + seg

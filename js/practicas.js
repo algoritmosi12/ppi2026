@@ -4,7 +4,6 @@ const nombre = document.getElementById("nombre");
 const diffNormal = document.getElementById("diffNormal");
 const Intro = document.getElementById("Intro");
 const diffDicil = document.getElementById("diffDificil");
-console.log(diffDicil)
 const boton = document.getElementById("btn");
  //sconsole.log(boton.value)
 boton.addEventListener("click", () => {
@@ -22,7 +21,12 @@ datos.nombre=nombre.value;
 crearDatos(datos)
     dir(boton.value)
 });
-
+boton.disabled = true;
+nombre.addEventListener("input", () => {
+    if (nombre.value.length > 0) {
+        boton.disabled = false;
+    }
+});
 diffDicil.addEventListener("change", () => {
   Intro.textContent="";
     if (diffDicil.checked) {
