@@ -1,15 +1,24 @@
-let seg = 30
-
 export function reloj(tiempo) {
-    const Timer = setInterval(() => {
-        seg--
-        tiempo.textContent = seg
+     
+    let seg = 30;
+    tiempo.textContent = seg;
 
-        if (seg < 10)
-            seg = "0" + seg
-        if (seg == 0) {
-            clearInterval(Timer)
+    const Timer = setInterval(() => {
+        seg--;
+        
+        if (seg <= 0) {
+            clearInterval(Timer);
+            tiempo.textContent = "00";
+            alert("Se acabó el tiempo");
+            return;
         }
-    }, 1000)
+
+        if (seg < 10){
+            tiempo.textContent = "0" + seg;
+        } else {
+            tiempo.textContent = seg;
+        }
+        
+    }, 1000);
     return seg;
 }
