@@ -21,12 +21,9 @@ dinero.textContent = "DINERO: $ " + datos.dinero
 tiempototal.textContent = "TIEMPO: " + datos.tiempo
 nombre.textContent = "Nombre: " + datos.nombre
 
-reloj(tiempo);
-/*if (relojactual == 0) {
-    console.log("se acabo el tiempo")
-}*/ //HAY QUE VER LO QUE PASA CUANDO EL RELOJ LLEGUE A 0
-btn.addEventListener("click", () => {
-    if (!opcionA.checked && !opcionB.checked && !opcionC.checked) {
+let auxreloj = reloj(tiempo);
+
+    if (auxreloj=="00") {
         switch (seleccionarAletoriamente()) {
             case (1):
                 opcionA.checked = true;
@@ -40,4 +37,3 @@ btn.addEventListener("click", () => {
         }
     }
         dir(btn.value);
-});

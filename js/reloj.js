@@ -10,7 +10,7 @@ export function reloj(tiempo) {
             clearInterval(Timer);
             tiempo.textContent = "00";
             alert("Se acabó el tiempo");
-            return;
+            return "00";
         }
 
         if (seg < 10){
@@ -18,7 +18,7 @@ export function reloj(tiempo) {
         } else {
             tiempo.textContent = seg;
         }
-        
+
     }, 1000);
     return seg;
 }
