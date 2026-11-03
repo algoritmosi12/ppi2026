@@ -9,20 +9,20 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="d-flex justify-content-between align-items-center p-3 mb-4 border-bottom border-secondary">
-        <p class="text-success mb-4">TIEMPO: x</p>
-        <p class="text-info mb-4">Nombre del usuario: x</p>
-        <p class="text-success mb-4">Nivel de dificultad: x</p>
-        <p class="text-info mb-4">DINERO: x</p>
-    </div>
+   <div class="d-flex justify-content-between align-items-center p-3 mb-4 border-bottom border-secondary">
+    <p class="text-success mb-4" id="tiempototal">TIEMPO: x</p>
+    <p class="text-info mb-4" id="nombre">Nombre: x</p>
+    <p class="text-success mb-4" id="diff">Nivel de dificultad: x</p>
+    <p class="text-info mb-4" id="dinero">DINERO: x</p>
+</div>
 
     <div class="text-center mt-4">
         <h1 class="text-success display-6">| Información poco clara |</h1>
     </div>
 
-    <div style="text-align: center;">
-        <p id="reloj"></p>
-    </div>
+    <div class="text-center">
+    <p id="tiempo" class="fs-3 offset-5 col-2 font-monospace fw-bold text-info my-2 p-2 bg-black border border-success"></p>
+</div>
 
     <div style="text-align: center;">
         <h4 class="text-success mb-4">Durante el diseño de la aplicación, encontrás un punto que no está del todo claro con respecto a la información
@@ -73,13 +73,12 @@
             </div>
         </div>
         <div class="text-center">
-            <button value="pantalla4.html" type="button" id="btn"
+            <button value="pantalla5.html" type="button" id="btn"
                 class="btn btn-outline-success btn-lg mt-5 px-5">Continuar</button>
         </div>
     </form>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../js/practicas.js"></script>
-    <script src="../js/reloj.js"></script>
+     <script src="../js/pantalla2.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </body>
