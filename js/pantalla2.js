@@ -1,26 +1,20 @@
-import { seleccionaraleatoriamente } from "./aleatorio.js"
-import { recuperarDatos } from "./sessionStorage.js"
-import { dir } from "./rutas.js"
-import { reloj } from "./reloj.js"
+import { recuperarDatos } from "./sessionStorage.js";
+import { reloj } from "./reloj.js";
 
 const tiempototal = document.getElementById("tiempototal");
-const btn = document.getElementById("btn");
 const diff = document.getElementById("diff");
 const dinero = document.getElementById("dinero");
 const nombre = document.getElementById("nombre");
 const tiempo = document.getElementById("tiempo");
 
-const opcionA = document.getElementById("opcionA");
-const opcionB = document.getElementById("opcionB");
-const opcionC = document.getElementById("opcionC");
+const datos = recuperarDatos();
 
-const datos = recuperarDatos()
+diff.textContent = "Dificultad: " + datos.diff;
+dinero.textContent = "DINERO: $ " + datos.dinero;
+tiempototal.textContent = "TIEMPO: " + datos.tiempo;
+nombre.textContent = "Nombre: " + datos.nombre;
 
-diff.textContent = "Dificultad: " + datos.diff
-dinero.textContent = "DINERO: $ " + datos.dinero
-tiempototal.textContent = "TIEMPO: " + datos.tiempo
-nombre.textContent = "Nombre: " + datos.nombre
-
+<<<<<<< HEAD
 let auxreloj = reloj(tiempo);
 
     if (auxreloj=="00") {
@@ -37,3 +31,6 @@ let auxreloj = reloj(tiempo);
         }
     }
         dir(btn.value);
+=======
+reloj(tiempo);
+>>>>>>> ee1ab16cd4eadcc1a5700671ca993c303cb5e270
