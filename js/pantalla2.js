@@ -27,7 +27,7 @@ reloj(tiempo);
 }*/ //HAY QUE VER LO QUE PASA CUANDO EL RELOJ LLEGUE A 0
 btn.addEventListener("click", () => {
     if (!opcionA.checked && !opcionB.checked && !opcionC.checked) {
-        switch (seleccionaraleatoriamente()) {
+        switch (seleccionarAletoriamente()) {
             case (1):
                 opcionA.checked = true;
                 break;
@@ -39,5 +39,5 @@ btn.addEventListener("click", () => {
                 break;
         }
     }
-        dir();
+        dir(btn.value);
 });

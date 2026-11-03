@@ -1,4 +1,5 @@
 export function reloj(tiempo) {
+     
     let seg = 30;
     tiempo.textContent = seg;
 
@@ -8,6 +9,7 @@ export function reloj(tiempo) {
         if (seg <= 0) {
             clearInterval(Timer);
             tiempo.textContent = "00";
+            alert("Se acabó el tiempo");
             return;
         }
 
