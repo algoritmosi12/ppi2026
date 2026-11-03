@@ -1,5 +1,5 @@
 import { seleccionaraleatoriamente } from "./aleatorio.js"
-import { dir } from "./rutas";
+import { dir } from "./rutas.js";
 
 export function reloj(tiempo) {
 
