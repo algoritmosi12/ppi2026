@@ -14,7 +14,6 @@ dinero.textContent = "DINERO: $ " + datos.dinero;
 tiempototal.textContent = "TIEMPO: " + datos.tiempo;
 nombre.textContent = "Nombre: " + datos.nombre;
 
-<<<<<<< HEAD
 let auxreloj = reloj(tiempo);
 
     if (auxreloj=="00") {
@@ -31,6 +30,3 @@ let auxreloj = reloj(tiempo);
         }
     }
         dir(btn.value);
-=======
-reloj(tiempo);
->>>>>>> ee1ab16cd4eadcc1a5700671ca993c303cb5e270
