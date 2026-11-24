@@ -1,6 +1,5 @@
 import { recuperarDatos } from "./sessionStorage.js";
 import { reloj } from "./reloj.js";
-import {dir} from "./rutas.js";
 
 const tiempototal = document.getElementById("tiempototal");
 const diff = document.getElementById("diff");
@@ -29,6 +28,5 @@ let auxreloj = reloj(tiempo);
                 opcionC.checked = true;
                 break;
         }
-                dir(btn.value);
     }
-
+        dir(btn.value);
