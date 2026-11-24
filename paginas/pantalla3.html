@@ -10,21 +10,21 @@
 
 <body class="bg-black text-white">
     <!-- Encabezado de variables -->
-   <div class="d-flex justify-content-between align-items-center p-3 mb-4 border-bottom border-secondary">
-    <p class="text-success mb-4" id="tiempototal">TIEMPO: x</p>
-    <p class="text-info mb-4" id="nombre">Nombre: x</p>
-    <p class="text-success mb-4" id="diff">Nivel de dificultad: x</p>
-    <p class="text-info mb-4" id="dinero">DINERO: x</p>
-</div>
+    <div class="d-flex justify-content-between align-items-center p-3 mb-4 border-bottom border-secondary">
+        <p class="text-success mb-4">TIEMPO: x</p>
+        <p class="text-info mb-4">Nombre del usuario: x</p>
+        <p class="text-success mb-4">Nivel de dificultad: x</p>
+        <p class="text-info mb-4">DINERO: x</p>
+    </div>
     
     <!-- Titulo -->
     <div class="text-center mt-4">
         <h1 class="text-success display-6">| Análisis y requerimientos |</h1>
     </div>
 
-    <div class="text-center">
-    <p id="tiempo" class="fs-3 offset-5 col-2 font-monospace fw-bold text-info my-2 p-2 bg-black border border-success"></p>
-</div>
+    <div style="text-align: center;">
+        <p id="reloj"></p>
+    </div>
 
     <div style="text-align: center;">
         <h4 class="text-success mb-4">Luego de realizar la entrevista, reuniste una gran cantidad de información sobre
@@ -42,8 +42,8 @@
                             <input type="radio" name="opcion" id="opcionA" class="form-check-input me-2">
                             Analizar y documentar la entrevista, Resaltando todo.
                         </label>
-                        <p class="text-success m-0 ps-4">⏱️ −3 semanas</p>
-                        <p class="text-info m-0 ps-4">💵 −$3.000</p>
+                        <p input type="number" class="text-success m-0 ps-4" id="semanaA" value="-3">⏱️ −3 semanas</p>
+                        <p input type="number" class="text-info m-0 ps-4" id="presupuestoA" value="-3000">💵 −$3.000</p>
                     </div>
                 </div>
             </div>
@@ -55,8 +55,8 @@
                             <input type="radio" name="opcion" id="opcionB" class="form-check-input me-2">
                             Analizar únicamente los requerimientos principales y dejar los detalles para más adelante
                         </label>
-                        <p class="text-success m-0 ps-4">⏱️ −2 semanas</p>
-                        <p class="text-info m-0 ps-4">💵 −$4.000</p>
+                        <p input type="number" class="text-success m-0 ps-4" id="semanaB" value="-2">⏱️ −2 semanas</p>
+                        <p input type="number"  class="text-info m-0 ps-4" id="presupuestoA" value="-4000">💵 −$4.000</p>
                     </div>
                 </div>
             </div>
@@ -68,8 +68,8 @@
                             <input type="radio" name="opcion" id="opcionC" class="form-check-input me-2">
                             Comenzar a diseñar la App sin tomarle mucha importancia a la entrevista.
                         </label>
-                        <p class="text-success m-0 ps-4">⏱️ −1 semanas</p>
-                        <p class="text-info m-0 ps-4">💵 - $2.000</p>
+                        <p input type="number" class="text-success m-0 ps-4" id="semana3" value="-1">⏱️ −1 semanas</p>
+                        <p input type="number" class="text-info m-0 ps-4" id="presupuesto3" value="-2000">💵 - $2.000</p>
                         <p class="text-warning  m-0 ps-4">🎲 Tirada (70% probabilidad de exito)</p>
                     </div>
                 </div>
@@ -81,7 +81,8 @@
         </div>
     </form>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../js/pantalla2.js" type="module"></script>
+    <script src="../js/practicas.js" type="module"></script>
+    <script src="../js/reloj.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </body>
