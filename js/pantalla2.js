@@ -29,6 +29,6 @@ let auxreloj = reloj(tiempo);
                 opcionC.checked = true;
                 break;
         }
-                dir(btn.value);
+                dir(btn.value);ñ
     }
 
