@@ -19,7 +19,7 @@ boton.addEventListener("click", () => {
  }
 datos.nombre=nombre.value;
 crearDatos(datos)
-    dir(boton.value)
+    dir("./paginas/Pantalla2.html");
 });
 boton.disabled = true;
 nombre.addEventListener("input", () => {
