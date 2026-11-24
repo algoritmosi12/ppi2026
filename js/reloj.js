@@ -17,6 +17,19 @@ export function reloj(tiempo) {
         if (seg <= 0) {
             clearInterval(Timer);
             tiempo.textContent = "00";
+<<<<<<< HEAD
+            alert("Se acabó el tiempo");
+            return "00";
+        }
+
+        if (seg < 10){
+            tiempo.textContent = "0" + seg;
+        } else {
+            tiempo.textContent = seg;
+        }
+
+    }, 1000);
+=======
                 if (!opcionA.checked && !opcionB.checked && !opcionC.checked) {
                     switch (seleccionaraleatoriamente()) {
                         case (1):
@@ -47,6 +60,7 @@ export function reloj(tiempo) {
             clearInterval(Timer);
             dir(btn.value);
         });
+>>>>>>> ee1ab16cd4eadcc1a5700671ca993c303cb5e270
     return seg;
 }
 
