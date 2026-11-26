@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-black text-white">
+    <div class="d-flex justify-content-between align-items-center p-3 mb-4 border-bottom border-secondary">
+    <p class="text-success mb-4" id="tiempototal">TIEMPO: x</p>
+    <p class="text-info mb-4" id="nombre">Nombre: x</p>
+    <p class="text-success mb-4" id="diff">Nivel de dificultad: x</p>
+    <p class="text-info mb-4" id="dinero">DINERO: x</p>
+</div>
+
+    <!-- Titulo -->
+    <div class="text-center mt-4">
+        <h1 class="text-success display-6">| Diseño y prototipo no funcional |</h1>
+    </div>
+
+    <div class="text-center">
+    <p id="tiempo" class="fs-3 offset-5 col-2 font-monospace fw-bold text-info my-2 p-2 bg-black border border-success"></p>
+</div>
+
+    <div style="text-align: center;">
+        <h4 class="text-success mb-4">Luego de analizar los requerimientos, llega el momento de diseñar 
+            la aplicación. Tenés una idea bastante clara de cómo debería ser, pero todavía no sabés si 
+            el cliente estará de acuerdo con tu propuesta. ¿Qué decidís hacer?</h1>
+    </div>
+
+    <form>
+        <div class="row justify-content-center g-4 px-3">
+
+            <div class="col-md-5">
+                <div class="card h-100 bg-transparent border-success p-3">
+                    <div class="card-body form-check m-0">
+                        <label class="form-check-label fw-bold text-success fs-5 mb-2">
+                            <input type="radio" name="opcion" id="opcionA" class="form-check-input me-2">
+                            Crear un diseño básico y mostrárselo al cliente Semanalmente para recibir su opinión
+                        </label>
+                        <p input type="number" class="text-success m-0 ps-4" id="semanaA"value="-6">⏱️ -6 semanas</p>
+                        <p input type="number" class="text-info m-0 ps-4" id="presupuestoA"value="-2000">💵 -$2.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card h-100 bg-transparent border-success p-3">
+                    <div class="card-body form-check m-0">
+                        <label class="form-check-label fw-bold text-success fs-5 mb-2">
+                            <input type="radio" name="opcion" id="opcionB" class="form-check-input me-2">
+                            Crear varias propuestas de diseño y dejar que el cliente elija.
+                        </label>
+                        <p input type="number" class="text-success m-0 ps-4" id="semanaB"value="-4">⏱️ -4 semanas</p>
+                        <p input type="number" class="text-info m-0 ps-4" id="presupuestoB"value="-7000">💵 -$7.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card h-100 bg-transparent border-success p-3">
+                    <div class="card-body form-check m-0">
+                        <label class="form-check-label fw-bold text-success fs-5 mb-2">
+                            <input type="radio" name="opcion" id="opcionC" class="form-check-input me-2">
+                            Crear un diseño completo de la aplicación antes de mostrárselo al cliente.
+                        </label>
+                        <p input type="number" class="text-success m-0 ps-4" id="semanaC"value="-3">⏱️ -3 semanas</p>
+                        <p input type="number" class="text-info m-0 ps-4" id="presupuestoC"value="-5000">💵 -$5.000</p>
+                        <p class="text-warning  m-0 ps-4">🎲 Tirada (70% probabilidad de exito)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button value="pantalla6.html" type="button" id="btn"
+                class="btn btn-outline-success btn-lg mt-5 px-5">Continuar</button>
+        </div>
+    </form>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/pantalla2.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</body>
+
+</html>
